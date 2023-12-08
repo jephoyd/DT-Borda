@@ -68,6 +68,9 @@
   z-index: 2;
   color: var(--color-gray-200);
 }
+.donate{
+  cursor: pointer;
+}
 .donate,
 .home1 {
   position: absolute;
@@ -434,32 +437,68 @@
   left: 595px;
   text-transform: uppercase;
 }
-.group-icon {
+.social-icons,
+.social-icons1,
+.social-icons2 {
   position: absolute;
   top: 334px;
+  left: 662px;
+  width: 34px;
+  height: 31px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.social-icons1,
+.social-icons2 {
   left: 610px;
-  width: 86px;
-  height: 31px;
 }
-.landing-page-about-child2,
-.landing-page-about-child3 {
+.social-icons2 {
+  left: 218px;
+}
+.social-icons3 {
+  left: 166px;
+  cursor: pointer;
+}
+.social-icons3,
+.social-icons4,
+.social-icons5 {
   position: absolute;
   top: 334px;
-  left: 166px;
-  width: 86px;
+  width: 34px;
   height: 31px;
+  overflow: hidden;
 }
-.landing-page-about-child3 {
-  left: 853px;
-  width: 287px;
-  height: 304px;
+.social-icons4 {
+  left: 1106px;
+  cursor: pointer;
 }
-.landing-page-about-child4 {
+.social-icons5 {
+  left: 1054px;
+}
+.social-icons6,
+.social-icons7,
+.social-icons8,
+.social-icons9 {
   position: absolute;
-  top: 606px;
-  left: 407px;
-  width: 86px;
+  top: 607px;
+  left: 905px;
+  width: 34px;
   height: 31px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.social-icons7,
+.social-icons8,
+.social-icons9 {
+  left: 853px;
+}
+.social-icons8,
+.social-icons9 {
+  top: 606px;
+  left: 459px;
+}
+.social-icons9 {
+  left: 407px;
 }
 .landing-page-about {
   position: absolute;
