@@ -58,14 +58,7 @@
 .blank-line {
   margin: 0;
 }
-.pano-to-burahin-container {
-  position: absolute;
-  top: 50.5px;
-  left: 234px;
-  display: none;
-  width: 213px;
-  height: 266px;
-}
+
 .vector-container,
 .vector-group {
   position: absolute;
@@ -183,28 +176,6 @@
   background-color: var(--color-gainsboro);
   width: 724px;
   height: 505px;
-  mix-blend-mode: darken;
-}
-.pano-to-burahin-container1 {
-  position: relative;
-  display: none;
-  width: 213px;
-  height: 266px;
-  flex-shrink: 0;
-}
-.pano-to-burahin-hahaha-wrapper {
-  position: absolute;
-  top: 6px;
-  left: 0;
-  border-radius: var(--br-11xl);
-  background-color: var(--color-gainsboro);
-  height: 505px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-3xs);
-  box-sizing: border-box;
   mix-blend-mode: darken;
 }
 .frame-item {
