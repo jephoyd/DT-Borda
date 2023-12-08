@@ -55,6 +55,16 @@
   left: 10px;
   width: 661px;
 }
+.hosts-name {
+  padding: 5px;
+  cursor: text;
+}
+
+.hosts-name:focus {
+  outline: none;
+  border-color: transparent;
+}
+
 .have-your-friends-join-your-ro-wrapper {
   position: absolute;
   top: 191px;
