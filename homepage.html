@@ -39,7 +39,7 @@
             </div>
           </div>
           <div class="donate">
-            <div class="home1">donate</div>
+            <div class="home1" id="donate-button">donate</div>
           </div>
         </div>
       </div>
@@ -140,24 +140,69 @@
         <div class="andrew-oloroso">Andrew Oloroso</div>
         <div class="vincent-johanne-tenorio">Vincent Johanne Tenorio</div>
         <div class="about-us">About US</div>
-        <img class="group-icon" alt="" src="./public/group-57.svg" />
-
         <img
-          class="landing-page-about-child2"
+          class="social-icons"
           alt=""
-          src="./public/group-57.svg"
+          src="./public/social-icons.svg"
+          id="socialIcons"
         />
 
         <img
-          class="landing-page-about-child3"
+          class="social-icons1"
           alt=""
-          src="./public/group-59.svg"
+          src="./public/social-icons1.svg"
+          id="socialIcons1"
         />
 
         <img
-          class="landing-page-about-child4"
+          class="social-icons2"
           alt=""
-          src="./public/group-57.svg"
+          src="./public/social-icons.svg"
+          id="socialIcons2"
+        />
+
+        <img
+          class="social-icons3"
+          alt=""
+          src="./public/social-icons1.svg"
+          id="socialIcons3"
+        />
+
+        <img
+          class="social-icons4"
+          alt=""
+          src="./public/social-icons.svg"
+          id="socialIcons4"
+        />
+
+        <img class="social-icons5" alt="" src="./public/social-icons1.svg" />
+
+        <img
+          class="social-icons6"
+          alt=""
+          src="./public/social-icons.svg"
+          id="socialIcons6"
+        />
+
+        <img
+          class="social-icons7"
+          alt=""
+          src="./public/social-icons1.svg"
+          id="socialIcons7"
+        />
+
+        <img
+          class="social-icons8"
+          alt=""
+          src="./public/social-icons.svg"
+          id="socialIcons8"
+        />
+
+        <img
+          class="social-icons9"
+          alt=""
+          src="./public/social-icons1.svg"
+          id="socialIcons9"
         />
       </div>
     </div>
@@ -193,7 +238,79 @@
       var createRoom = document.getElementById("createRoom");
       if (createRoom) {
         createRoom.addEventListener("click", function (e) {
-          window.location.href = "./createroom.html";
+          window.location.href = "./votingroom.html";
+        });
+      }
+      
+      var createRoom = document.getElementById("donate-button");
+      if (createRoom) {
+        createRoom.addEventListener("click", function (e) {
+          window.location.href = "./donationpage.html";
+        });
+      }
+
+      var socialIcons = document.getElementById("socialIcons");
+      if (socialIcons) {
+        socialIcons.addEventListener("click", function () {
+          window.open("https://github.com/meri-hane");
+        });
+      }
+      
+      var socialIcons1 = document.getElementById("socialIcons1");
+      if (socialIcons1) {
+        socialIcons1.addEventListener("click", function () {
+          window.open("https://www.linkedin.com/in/mary-jane-calulang-0a96a2250/");
+        });
+      }
+      
+      var socialIcons2 = document.getElementById("socialIcons2");
+      if (socialIcons2) {
+        socialIcons2.addEventListener("click", function () {
+          window.open("https://github.com/jephoyd");
+        });
+      }
+      
+      var socialIcons3 = document.getElementById("socialIcons3");
+      if (socialIcons3) {
+        socialIcons3.addEventListener("click", function () {
+          window.open("https://www.linkedin.com/in/armand-angelo-barrios-8783381ba/");
+        });
+      }
+      
+      var socialIcons4 = document.getElementById("socialIcons4");
+      if (socialIcons4) {
+        socialIcons4.addEventListener("click", function () {
+          window.open("https://github.com/evyjuan");
+        });
+      }
+      
+      var socialIcons6 = document.getElementById("socialIcons6");
+      if (socialIcons6) {
+        socialIcons6.addEventListener("click", function () {
+          window.open("https://github.com/Yuhan-BSCS");
+        });
+      }
+      
+      var socialIcons7 = document.getElementById("socialIcons7");
+      if (socialIcons7) {
+        socialIcons7.addEventListener("click", function () {
+          window.open(
+            "https://www.linkedin.com/in/vincent-johanne-tenorio-a627942a3/"
+          );
+        });
+      }
+      
+      var socialIcons8 = document.getElementById("socialIcons8");
+      if (socialIcons8) {
+        socialIcons8.addEventListener("click", function () {
+          window.open("https://github.com/ChugxScript");
+        });
+      }
+      
+      var socialIcons9 = document.getElementById("socialIcons9");
+      if (socialIcons9) {
+        socialIcons9.addEventListener("click", function () {
+          window.open("https://www.linkedin.com/in/aroloroso/");
         });
       }
       </script>
