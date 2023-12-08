@@ -26,7 +26,7 @@
 
         <div class="room-link">Room Link</div>
       </div>
-      <div class="hosts-name">Host’s Name</div>
+      <div class="hosts-name" contenteditable="true" id="editableContent">Host’s Name</div>
       <div class="have-your-friends-join-your-ro-wrapper">
         <div class="have-your-friends">
           Have your friends join your room with the room ID or link!
@@ -59,6 +59,16 @@
           window.location.href = "./votingroom.html";
         });
       }
+
+      const editableDiv = document.getElementById('editableContent');
+        editableDiv.addEventListener('focus', function() {
+           editableDiv.innerText = "";
+         });
+        editableDiv.addEventListener('blur', function() {
+           if (editableDiv.innerText === "") {
+            editableDiv.innerText = "Host’s Name";
+           }
+         });
       </script>
   </body>
 </html>
