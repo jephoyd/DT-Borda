@@ -25,12 +25,12 @@
       </div>
       <div class="join-room-parent">
         <div class="join-room">Join Room</div>
-        <div class="group-child"></div>
-        <img class="group-item" alt="" src="./public/rectangle-5.svg" />
+        <div class="group-child">
+          <input type="text" id="username" name="username" oninput="handleInput(this)" placeholder="Enter username">
+        </div>
 
         <div class="group-inner"></div>
         <b class="enter" id="enterText">Enter</b>
-        <div class="enter-room-id" contenteditable="true" id="editableContent">Enter Room ID</div>
       </div>
       </div>
     </div>
@@ -50,15 +50,14 @@
         });
       }
 
-      const editableDiv = document.getElementById('editableContent');
-        editableDiv.addEventListener('focus', function() {
-           editableDiv.innerText = "";
-         });
-        editableDiv.addEventListener('blur', function() {
-           if (editableDiv.innerText === "") {
-            editableDiv.innerText = "Enter Room ID";
-           }
-         });
+         function handleInput(inputElement) {
+      var placeholderText = "Enter room ID";
+      if (inputElement.value.trim() === "") {
+        inputElement.placeholder = placeholderText;
+      } else {
+        inputElement.placeholder = "";
+      }
+    }
       </script>
   </body>
 </html>
