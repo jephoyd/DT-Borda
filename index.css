@@ -25,6 +25,7 @@
 .home {
   position: relative;
   letter-spacing: 0.15em;
+  white-space: nowrap;
 }
 .home-item {
   width: 109px;
