@@ -29,7 +29,7 @@
           <div class="header-child"></div>
           <div class="navigation-menu">
             <div class="home-item">
-              <div class="home">home</div>
+              <div class="home">how to play</div>
             </div>
             <div class="about-item">
               <div class="about" id="aboutText">features</div>
@@ -105,7 +105,7 @@
         </div>
       </div>
       <div class="join-room-item">
-        <div class="join-room">Join Room</div>
+        <div class="join-room" id="join">Join Room</div>
       </div>
       <div class="landing-page-about" data-scroll-to="landingPageAbout">
         <img
@@ -225,6 +225,13 @@
         });
       }
       
+      var joinRoom = document.getElementById("join");
+      if (joinRoom) {
+        joinRoom.addEventListener("click", function (e) {
+          window.location.href = "./joinroom.html";
+        });
+      }
+
       var aboutText1 = document.getElementById("aboutText1");
       if (aboutText1) {
         aboutText1.addEventListener("click", function () {
@@ -234,7 +241,7 @@
           }
         });
       }
-      
+
       var createRoom = document.getElementById("createRoom");
       if (createRoom) {
         createRoom.addEventListener("click", function (e) {
@@ -242,6 +249,7 @@
         });
       }
       
+
       var createRoom = document.getElementById("donate-button");
       if (createRoom) {
         createRoom.addEventListener("click", function (e) {
