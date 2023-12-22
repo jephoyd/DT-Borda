@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./joinroom1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-join-room-link">
+      <div class="header">
+        <div class="header1">
+          <div class="logo" id="logoContainer">
+            <div class="chews-wisely">chews wiselY</div>
+          </div>
+          <img class="header-child" alt="" src="./public/group-14@2x.png" />
+
+          <div class="navigation-menu">
+            <div class="home-item">
+              <div class="home">home</div>
+            </div>
+            <div class="about-item">
+              <div class="home">features</div>
+            </div>
+            <div class="about-item1">
+              <div class="about1">about us</div>
+            </div>
+          </div>
+          <div class="donate">
+            <div class="home1">donate</div>
+          </div>
+        </div>
+      </div>
+      <div class="join-room-id-parent">
+        <div class="join-room">Join Room | ID:</div>
+        <div class="group-child">
+          <input type="text" id="username" name="username" oninput="handleInput(this)" placeholder="Enter username">
+        </div>
+
+        <div class="group-inner"></div>
+        <b class="join">Join</b>
+      </div>
+      <div class="header2">
+        <div class="logo1">
+          <div class="chews-wisely">chews wiselY</div>
+        </div>
+
+        <div class="navigation-menu1">
+          <div class="home-item1">
+            <div class="home">home</div>
+          </div>
+          <div class="about-item2">
+            <div class="home">about</div>
+          </div>
+          <div class="create-room-item">
+            <div class="create-room">create room</div>
+          </div>
+          <div class="join-room-item">
+            <div class="create-room">join room</div>
+          </div>
+          <div class="donate1">
+            <div class="home1">donate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function handleInput(inputElement) {
+      var placeholderText = "Enter username";
+      if (inputElement.value.trim() === "") {
+        inputElement.placeholder = placeholderText;
+      } else {
+        inputElement.placeholder = "";
+      }
+    }
+    </script>
+  </body>
+</html>
