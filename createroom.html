@@ -22,8 +22,8 @@
   <body>
     <div class="desktop-create-room">
       <div class="frame-div">
-        <img class="vector-icon" alt="" src="./public/vector.svg" />
-
+        <img class="vector-icon" alt="" src="./public/vector.svg" onclick="showPopup()" />
+        <div id="popup">Link copied successfully.</div>
         <div class="room-link">Room Link</div>
       </div>
       <div class="hosts-name" contenteditable="true" id="editableContent">Host’s Name</div>
@@ -33,7 +33,7 @@
         </div>
       </div>
       <div class="room-id">
-        Room ID: <input type="text" id="roomID" name="roomID">
+        Room ID: <input type="text" id="roomID" name="roomID" readonly>
     </div>
       <div class="logo-wrapper" id="groupContainer">
         <div class="logo3">
@@ -69,6 +69,15 @@
             editableDiv.innerText = "Host’s Name";
            }
          });
+         function showPopup() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'block';
+
+    // Automatically hide the popup after 2 seconds
+    setTimeout(function() {
+      popup.style.display = 'none';
+    }, 2000);
+  }
       </script>
   </body>
 </html>
