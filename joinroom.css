@@ -109,8 +109,8 @@
 }
 
 .group-child {
-  position: absolute;
-  top: 63px;
+  position: relative;
+  top: 59px;
   left: 0;
   border-radius: 42px;
   background-color: #d9d9d9;
@@ -118,7 +118,7 @@
   border: 1px solid var(--color-black);
   box-sizing: border-box;
   width: 585px;
-  height: 222px;
+  height: 228px;
 }
 .group-inner,
 .group-item {
@@ -147,6 +147,30 @@
   top: 110px;
   left: 201px;
   color: #cdbebe;
+}
+.enter-username {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #cdbebe;
+}
+
+#username {
+  height: 27%;
+  width: 80%; /* Adjust the width as needed */
+  padding: 12px; /* Adjust the padding as needed */
+  border: 2px solid #ccc; /* Add border styles */
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 27px;
+}
+#username::placeholder {
+  color: gray; /* Set the initial text color as transparent */
 }
 .join-room-parent {
   position: absolute;
