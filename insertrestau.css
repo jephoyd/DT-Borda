@@ -1,0 +1,302 @@
+.room-id- {
+  margin: 0;
+}
+.room-id-container {
+  position: absolute;
+  top: 59px;
+  left: 1117px;
+  display: inline-block;
+  width: 262px;
+  height: 36px;
+}
+#username1 {
+  height: 8%;
+  width: 50%; /* Adjust the width as needed */
+  padding: 12px; /* Adjust the padding as needed */
+  border: 2px solid #ccc; /* Add border styles */
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: absolute; /* Change to absolute */
+  top: 42%; /* Adjust the top value as needed */
+  left: 8.40%; /* Adjust the left value to position on the left */
+  font-size: 27px;
+}
+#username1::placeholder {
+  color: gray; /* Set the initial text color as transparent */
+}
+#username2 {
+  height: 8%;
+  width: 50%; /* Adjust the width as needed */
+  padding: 12px; /* Adjust the padding as needed */
+  border: 2px solid #ccc; /* Add border styles */
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: absolute; /* Change to absolute */
+  top: 52%; /* Adjust the top value as needed */
+  left: 8.40%; /* Adjust the left value to position on the left */
+  font-size: 27px;
+}
+#username2::placeholder {
+  color: gray; /* Set the initial text color as transparent */
+}
+#username3 {
+  height: 8%;
+  width: 50%; /* Adjust the width as needed */
+  padding: 12px; /* Adjust the padding as needed */
+  border: 2px solid #ccc; /* Add border styles */
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: absolute; /* Change to absolute */
+  top: 62%; /* Adjust the top value as needed */
+  left: 8.40%; /* Adjust the left value to position on the left */
+  font-size: 27px;
+}
+#username3::placeholder {
+  color: gray; /* Set the initial text color as transparent */
+}
+.ready-wrapper {
+  cursor: pointer;
+}
+.instructions-input-container,
+.restaurant {
+  position: absolute;
+  top: 295px;
+  left: 158px;
+  display: inline-block;
+  width: 112px;
+  height: 30px;
+}
+.instructions-input-container {
+  top: 108px;
+  font-size: var(--font-size-5xl);
+  width: 742px;
+  height: 164px;
+}
+.ready {
+  position: relative;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.exit-wrapper,
+.ready-wrapper {
+  position: absolute;
+  top: 681px;
+  border-radius: var(--br-11xl);
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+  text-align: center;
+  color: var(--color-white);
+}
+.ready-wrapper {
+  cursor: not-allowed;
+  background-color: #808080; 
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px; 
+  display: inline-block;
+  left: 662px;
+  transform: translateX(-50%);
+  width: 206px; 
+}
+
+.ready-wrapper:hover {
+  background-color: #808080; 
+}
+
+.ready-wrapper.active {
+  cursor: pointer;
+  background-color: #000; 
+}
+
+.exit-wrapper {
+  left: 270px;
+  background-color: var(--color-black);
+  width: 207px;
+  cursor: pointer;
+}
+.chews-wisely {
+  position: absolute;
+  top: 2px;
+  left: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.logo {
+  position: absolute;
+  top: 11px;
+  left: 18.5px;
+  border-radius: 10px;
+  background-color: var(--color-gray-100);
+  width: 200px;
+  height: 30px;
+}
+.header-child {
+  position: absolute;
+  height: 76.92%;
+  width: 26.01%;
+  top: 11.54%;
+  right: -390.74%;
+  bottom: 11.54%;
+  left: 464.73%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.home {
+  position: relative;
+  letter-spacing: 0.15em;
+}
+.about-item,
+.home-item {
+  width: 74px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-xl);
+  box-sizing: border-box;
+  z-index: 0;
+}
+.about-item {
+  width: 73px;
+  z-index: 1;
+  color: var(--color-gray-100);
+}
+.create-room {
+  position: relative;
+}
+.create-room-item,
+.join-room-item {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-xl);
+  box-sizing: border-box;
+  font-size: var(--font-size-mini);
+}
+.create-room-item {
+  width: 176px;
+  z-index: 2;
+  color: #111112;
+}
+.join-room-item {
+  width: 121px;
+  z-index: 3;
+  font-family: var(--font-montserrat);
+}
+.home1 {
+  position: absolute;
+  top: 11px;
+  left: 18px;
+  letter-spacing: 0.15em;
+}
+.donate,
+.navigation-menu {
+  position: absolute;
+  display: none;
+}
+.donate {
+  margin: 0 !important;
+  top: 0;
+  left: 469.5px;
+  border-radius: 60px;
+  background-color: var(--color-gray-100);
+  width: 100px;
+  height: 45px;
+  z-index: 4;
+  color: var(--color-white);
+}
+.navigation-menu {
+  top: 6px;
+  left: 703.5px;
+  width: 489px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+}
+.header {
+  position: absolute;
+  top: 38px;
+  left: 36px;
+  width: 243px;
+  height: 52px;
+  text-align: center;
+  color: var(--color-white);
+}
+.desktop-insert-restaurants-child {
+  position: absolute;
+  top: 341px;
+  left: 158px;
+  width: 742px;
+  height: 71px;
+  object-fit: cover;
+}
+.input-restaurant {
+  position: absolute;
+  top: 362px;
+  left: 186px;
+  font-size: var(--font-size-5xl);
+  display: inline-block;
+  font-family: var(--font-montserrat);
+  color: var(--color-gainsboro);
+  width: 690px;
+}
+.desktop-insert-restaurants-item {
+  position: absolute;
+  top: 444px;
+  left: 158px;
+  width: 742px;
+  height: 71px;
+  object-fit: cover;
+}
+.input-restaurant1 {
+  position: absolute;
+  top: 465px;
+  left: 186px;
+  font-size: var(--font-size-5xl);
+  display: inline-block;
+  font-family: var(--font-montserrat);
+  color: var(--color-gainsboro);
+  width: 690px;
+}
+.desktop-insert-restaurants-inner {
+  position: absolute;
+  top: 547px;
+  left: 158px;
+  width: 742px;
+  height: 71px;
+  object-fit: cover;
+}
+.input-restaurant2 {
+  position: absolute;
+  top: 568px;
+  left: 186px;
+  font-size: var(--font-size-5xl);
+  display: inline-block;
+  font-family: var(--font-montserrat);
+  color: var(--color-gainsboro);
+  width: 690px;
+}
+.desktop-insert-restaurants {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-outfit);
+}

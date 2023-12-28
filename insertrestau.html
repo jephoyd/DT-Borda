@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./insertrestau.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-insert-restaurants">
+      <div class="room-id-container">
+        <p class="room-id-">Room ID: _____________</p>
+        <p class="room-id-">&nbsp;</p>
+      </div>
+      <div class="restaurant">
+        <p class="room-id-">Restaurant</p>
+        <p class="room-id-">&nbsp;</p>
+      </div>
+      <div class="instructions-input-container">
+        <p class="room-id-">Instructions:</p>
+        <p class="room-id-">‣ Input a restaurant.</p>
+        <p class="room-id-">
+          ‣ Each user is required to input at least 1 restaurant of their
+          choice.
+        </p>
+        <p class="room-id-">‣ Press “Ready” to start voting.</p>
+        <p class="room-id-">&nbsp;</p>
+      </div>
+      <div class="ready-wrapper" onclick="handleClick()">
+        <div class="ready">Ready</div>
+      </div>
+      <div class="exit-wrapper" id="frameContainer1">
+        <div class="ready">Exit</div>
+      </div>
+      <div class="header">
+        <div class="logo">
+          <div class="chews-wisely">chews wiselY</div>
+        </div>
+        <img class="header-child" alt="" src="./public/group-14@2x.png" />
+
+        <div class="navigation-menu">
+          <div class="home-item">
+            <div class="home">home</div>
+          </div>
+          <div class="about-item">
+            <div class="home">about</div>
+          </div>
+          <div class="create-room-item">
+            <div class="create-room">create room</div>
+          </div>
+          <div class="join-room-item">
+            <div class="create-room">join room</div>
+          </div>
+          <div class="donate">
+            <div class="home1">donate</div>
+          </div>
+        </div>
+      </div>
+      <div class="group-child">
+        <input type="text" id="username1" name="username" oninput="handleInput()" placeholder="Input restaurant">
+        <input type="text" id="username2" name="username" oninput="handleInput()" placeholder="Input restaurant">
+        <input type="text" id="username3" name="username" oninput="handleInput()" placeholder="Input restaurant">
+      </div>
+    </div>
+
+    <script>
+      var frameContainer1 = document.getElementById("frameContainer1");
+      if (frameContainer1) {
+        frameContainer1.addEventListener("click", function (e) {
+          window.location.href = "index.html";
+        });
+      }
+  
+      function handleInput() {
+        var input1 = document.getElementById("username1").value.trim();
+        var input2 = document.getElementById("username2").value.trim();
+        var input3 = document.getElementById("username3").value.trim();
+  
+        var readyButton = document.querySelector(".ready-wrapper");
+  
+        if (input1 || input2 || input3) {
+          readyButton.classList.add("active");
+        } else {
+          readyButton.classList.remove("active");
+        }
+      }
+  
+      function handleClick() {
+        var readyButton = document.querySelector(".ready-wrapper");
+  
+        if (readyButton.classList.contains("active")) {
+          // Add your desired action when the button is clicked
+          alert("Button clicked!");
+          // You can replace the alert with any other JavaScript action you want.
+        }
+      }
+    </script>
+  </body>
+</html>
